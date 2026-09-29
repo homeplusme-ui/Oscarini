@@ -36,7 +36,7 @@ client.on('messageCreate', async (message) => {
   if (command === 'mute') {
     if (!message.member.permissions.has('ModerateMembers')) return message.reply("❌ No permission.");
     if (!targetMember) return message.reply('❌ Mention a member to mute.');
-    const durationInput = parseInt(args[1]) || 10; 
+    const durationInput = parseInt(args[0]) || 10; 
     const durationMs = durationInput * 60 * 1000;
     try {
       await targetMember.timeout(durationMs, reason);
