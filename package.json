@@ -1,0 +1,12 @@
+{
+  "name": "discord-moderation-bot",
+  "version": "1.0.0",
+  "description": "A simple moderation bot for Discord built on iPad",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
